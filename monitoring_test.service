@@ -1,0 +1,10 @@
+[Unit]
+Description=Monitor Test Process
+
+[Service]
+Type=simple
+ExecStart=/path/to/monitor_test.sh
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
